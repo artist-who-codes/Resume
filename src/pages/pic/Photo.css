@@ -1,0 +1,102 @@
+.background {
+    background-image: url(bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: beige;
+    background-position: center bottom;
+}
+
+.Content {
+    display: flex;
+    margin-left: 13%;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+.Photographer {
+    font-weight: 100;
+    font-size: 4vw;
+    margin-top: 20%;
+
+}
+
+.Para {
+    width: 80%;
+    font-weight: 100;
+    line-height: 2vw;
+    padding-top: 5%;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.carousel {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-top: 13%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-right: 25%;
+    align-items: center;
+}
+
+
+button {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+@media screen and (max-width:600px) {
+    .background {
+        background-image: url(../art/bg_phn.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-attachment: fixed;
+        background-position: right top;
+        color: beige;
+    }
+
+    .Content {
+        display: grid;
+        margin-left: 16%;
+
+    }
+
+    .Photographer {
+
+        font-size: 7vw;
+
+    }
+
+    .Para {
+        width: 75%;
+        line-height: 4vw;
+        font-weight: 100;
+        text-align: justify;
+        text-justify: inter-word;
+
+    }
+
+    .carousel {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.08);
+        margin-top: 13%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-right: 25%;
+        margin-bottom: 15%;
+        align-items: center;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,42 @@
+.Background {
+    background-image: url(../pic/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    color: beige;
+    background-position: center bottom;
+}
+
+.content {}
+
+.developer {
+    font-size: 4vw;
+    font-Weight: 150;
+    padding-Top: 10%;
+    animation-name: fade;
+    animation-duration: 3s;
+    margin-left: 10%;
+}
+
+.Flexbox {
+    display: flex;
+}
+
+.Flexbox>.pics {
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-right: 10%;
+    display: grid;
+
+}
+
+.Flexbox>.pics>img {
+    padding: 10%;
+}
+
+.text {
+    width: 75%;
+    line-height: 4vw;
+    font-weight: 100;
+    text-align: justify;
+    text-justify: inter-word;
+}

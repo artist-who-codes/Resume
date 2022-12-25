@@ -1,0 +1,160 @@
+.Background {
+    background-image: url(../pic/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    color: beige;
+    background-position: center bottom;
+}
+
+.Artist {
+    font-size: 4vw;
+    font-Weight: 150;
+    padding-Top: 10%;
+    margin-left: 10%;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+.Flexbox {
+    display: flex;
+    margin-left: 10%;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+.Flexbox>div {
+    padding-right: 10%;
+    width: 40%;
+    font-weight: 100;
+    line-height: 2vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+img {
+    padding-right: 5%;
+}
+
+.Pictures {
+    margin-left: 10%;
+    padding-top: 5%;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+.Pictures>div {
+    display: inline;
+}
+
+.Pictures>img {
+    padding-right: 4%;
+}
+
+.Flex2 {
+    display: flex;
+    padding: 4%;
+    margin-left: 14%;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+.Flex2>div {
+    align-content: center;
+    padding-right: 5%;
+    font-weight: 100;
+    line-height: 2vw;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+@media screen and (max-width:600px) {
+    .Background {
+        background-image: url(bg_phn.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right top;
+        color: beige;
+    }
+
+
+    .Artist {
+        padding-top: 15%;
+        font-size: 7vw;
+        margin-left: 16%;
+    }
+
+    .Flexbox {
+        display: grid;
+        margin-left: 10%;
+        animation-name: fade;
+        animation-duration: 3s;
+        margin-left: 16%;
+    }
+
+    .Flexbox>div {
+        width: 75%;
+        line-height: 4vw;
+        font-weight: 100;
+        text-align: left;
+
+    }
+
+    .Flexbox>.drawings {
+        display: flex;
+    }
+
+    .Flexbox>.drawings>img {
+        width: 27vw;
+        height: 36vw;
+        padding-top: 5%;
+        padding-right: 10%;
+    }
+
+    .Pictures {
+        display: flex;
+        margin-left: 16%;
+    }
+
+    .Pictures>div {
+        display: grid;
+        padding-right: 7%;
+    }
+
+    .Pictures>div>img {
+        width: 27vw;
+        height: 27vw;
+        padding-top: 25%
+    }
+
+    .Flex2 {
+        display: grid;
+        padding-top: 5%;
+
+    }
+
+    .Flex2>div>img {
+        padding-top: 5%;
+        width: 45vw;
+        height: auto;
+        margin-left: 12%;
+    }
+
+    .Flex2>div>p {
+        text-align: center;
+        line-height: 3vw;
+
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

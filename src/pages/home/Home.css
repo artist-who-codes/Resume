@@ -1,0 +1,133 @@
+.home {
+    background-image: url(bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: beige;
+    vertical-align: middle;
+    background-position: center bottom;
+
+}
+
+
+.intro {
+
+    width: 20%;
+    height: 20%;
+    font-family: 'Lucida sans Unicode ', monospace, ;
+    font-weight: 100;
+    color: beige;
+    animation-name: text1;
+    animation-duration: 2s;
+    margin-left: 20%;
+    padding-top: 13%
+}
+
+.Hello {
+    font-size: 2vw;
+}
+
+.Abirami {
+    font-size: 6vw;
+}
+
+.React {
+    font-size: 1.5vw;
+}
+
+
+.skills {
+    font-weight: 100;
+    margin-left: 20%;
+    padding-top: 15%;
+}
+
+a {
+    animation: fade 2s;
+    text-decoration: none;
+    color: beige;
+    justify-content: center;
+    padding-left: 7%;
+    padding-right: 7%;
+
+
+}
+
+@media screen and (max-width:600px) {
+    .home {
+        animation-name: bg;
+        animation-duration: 6s;
+        background-image: url(bg_phn.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right top;
+        color: beige;
+    }
+
+    .intro {
+        width: 50%;
+        height: 20%;
+        font-family: 'Lucida sans Unicode ', monospace, ;
+        font-weight: 100;
+        color: beige;
+        animation-name: text1;
+        animation-duration: 2s;
+        margin-left: 20%;
+
+    }
+
+    .Hello {
+        margin-top: 40%;
+        font-size: 3vw;
+    }
+
+    .Abirami {
+        font-size: 7.5vw;
+    }
+
+    .React {
+        font-size: 3vw;
+    }
+
+    .skills {
+        padding-top: 45%;
+        font-size: 3.5vw;
+        display: grid;
+        margin-right: 20%;
+    }
+
+    a {
+        padding: 2%;
+        text-align: right;
+    }
+}
+
+
+@keyframes text1 {
+    0% {
+        opacity: 0;
+        margin-left: 9%;
+    }
+
+    100% {
+        @media screen and (max-width:992px) {
+            opacity: 1;
+            margin-left: 30%;
+        }
+
+        opacity: 1;
+        margin-left: 20%;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
